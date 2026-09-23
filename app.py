@@ -40,8 +40,8 @@ def emo():
 
     return jsonify({
         "responseType": "inChannel",
-       "text": f"[{key}]({url})",
-        "attachments": [{"imageUrl": url, "thumbUrl": url}],
+        "text": key,                          # 두레이는 text가 있어야 메시지를 띄움
+        "attachments": [{"imageUrl": url}],   # 큰 이미지 한 장만
     })
 
 
