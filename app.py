@@ -40,6 +40,7 @@ def emo():
 
     return jsonify({
         "responseType": "inChannel",
+       "text": f"[{key}]({url})",
         "attachments": [{"imageUrl": url, "thumbUrl": url}],
     })
 
