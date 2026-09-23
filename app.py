@@ -28,6 +28,9 @@ def emo():
     key = (data.get("text") or "").strip()
     url = EMOJIS.get(key)
 
+    # 디버깅용 로그 (토큰 값은 찍지 않고 입력 키워드만 기록)
+    print(f"[godori] 요청 받음: text='{key}' -> {'찾음' if url else '없음'}", flush=True)
+
     if not url:
         # 키워드가 없거나 틀리면 입력한 본인에게만 안내
         return jsonify({
@@ -37,7 +40,8 @@ def emo():
 
     return jsonify({
         "responseType": "inChannel",
-        "attachments": [{"imageUrl": url}],
+        "text": url,
+        "attachments": [{"imageUrl": url, "thumbUrl": url}],
     })
 
 
