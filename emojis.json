@@ -1,0 +1,16 @@
+{
+  "확인":   "01_confirm.png",
+  "좋아요": "02_good.png",
+  "작업중": "03_work.png",
+  "확인중": "04_cheking.png",
+  "회의중": "05_meeting.png",
+  "부탁":   "06_please.png",
+  "죄송":   "07_sorry.png",
+  "완료":   "08_done.png",
+  "죽":     "09_die.png",
+  "생각":   "10_think.png",
+  "내가":   "11_me.png",
+  "조용":   "12_inner.png",
+  "답답":   "13_silent.png",
+  "혼자":   "14_alone.png"
+}
