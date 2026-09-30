@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-BASE = "https://raw.githubusercontent.com/msk0923/dooray-godori/main/"
+BASE = "https://raw.githubusercontent.com/msk0923/dooray-godori/main/images/"
 
 EMOJIS = {
     "확인":   BASE + "01_confirm.png",
